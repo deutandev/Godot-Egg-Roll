@@ -13,3 +13,11 @@ func _process(delta):
 		velocity.y = JUMP_SPEED
 	
 	move_and_slide(velocity, Vector2.UP)
+
+
+func game_over():
+	get_tree().quit()
+
+
+func _on_Area2D_area_entered(area):
+	game_over()

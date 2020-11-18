@@ -1,17 +1,10 @@
 extends Area2D
 
-
+var obs_speed = 400
 func _process(delta):
-	position.x -= 400 * delta
+	position.x -= obs_speed * delta
 
 
-func _on_ObstacleTimer_timeout():
-	pass # Replace with function body.
 
-
-func _on_VisibilityNotifier2D_screen_exited():
+func _on_VisibilityNotifier2D_viewport_exited(viewport):
 	queue_free()
-
-
-func _on_Obstacle_body_entered(body):
-	get_tree().quit()
