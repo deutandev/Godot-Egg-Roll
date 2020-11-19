@@ -1,1 +1,1 @@
-#Dino Chrome Ripoff Godot Game
+# Chrome Dino Game - Godot Ripoff
