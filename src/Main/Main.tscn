@@ -11,10 +11,10 @@ extents = Vector2( 57.145, 8.00006 )
 script = ExtResource( 2 )
 
 [node name="PlayerNode" parent="." instance=ExtResource( 1 )]
-position = Vector2( 160, 544 )
+position = Vector2( 160, 560 )
 
 [node name="Floor" type="StaticBody2D" parent="."]
-position = Vector2( 166.855, 584 )
+position = Vector2( 166.855, 600 )
 collision_mask = 2
 __meta__ = {
 "_edit_group_": true

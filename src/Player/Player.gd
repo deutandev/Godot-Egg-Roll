@@ -1,18 +1,49 @@
 extends KinematicBody2D
 
 
-const GRAVITY = 20
-const JUMP_SPEED = -600
+#Jump 
+export var fall_gravity_scale := 150.0
+export var low_jump_gravity_scale := 100.0
+export var jump_power := 600.0
+var jump_released = false
 
-var velocity = Vector2.ZERO
+#Physics
+var velocity = Vector2()
+var earth_gravity = 10 # m/s^2
+export var gravity_scale := 100.0
+var on_floor = false
 
 
-func _process(delta):
-	velocity.y += GRAVITY
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_SPEED
-	
-	move_and_slide(velocity, Vector2.UP)
+func _physics_process(delta):
+	if Input.is_action_just_released("ui_accept"):
+		jump_released = true
+
+	#Applying gravity to player
+	velocity += Vector2.DOWN * earth_gravity * gravity_scale * delta
+
+	#Jump Physics
+	if velocity.y > 0: #Player is falling
+		#Falling action is faster than jumping action | Like in mario
+		#On falling we apply a second gravity to the player
+		#We apply ((gravity_scale + fall_gravity_scale) * earth_gravity) gravity on the player
+		velocity += Vector2.DOWN * earth_gravity * fall_gravity_scale * delta 
+
+	elif velocity.y < 0 && jump_released: #Player is jumping 
+		#Jump Height depends on how long you will hold key
+		#If we release the jump before reaching the max height 
+		#We apply ((gravity_scale + low_jump_gravity_scale) * earth_gravity) gravity on the player
+		#It result on a lower jump
+		velocity += Vector2.DOWN * earth_gravity * low_jump_gravity_scale * delta
+
+	if on_floor:
+		if Input.is_action_just_pressed("ui_accept"): 
+			velocity = Vector2.UP * jump_power #Normal Jump action
+			jump_released = false
+
+	velocity = move_and_slide(velocity, Vector2.UP) 
+
+	if is_on_floor(): on_floor = true
+	else: on_floor = false
 
 
 func game_over():
