@@ -7,12 +7,13 @@ onready var score_label = $Control/CanvasLayer/ScoreLabel
 
 func _ready():
 	Global.current_score = 0
-	
+
 
 func _on_ObstacleTimer_timeout():
 	var obs = OBSTACLE.instance()
 	obs.position.y = $PlayerNode.position.y
 	add_child(obs)
+	$ObstacleTimer.wait_time = rand_range(0.5, 3)
 
 
 func _on_ScoreTimer_timeout():
