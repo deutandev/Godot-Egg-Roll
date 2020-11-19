@@ -4,10 +4,20 @@
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
-[node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
+[node name="bg" type="ColorRect" parent="ParallaxBackground"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0.109804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Horizon" type="ColorRect" parent="ParallaxBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 571.507
+margin_bottom = -146.493
+color = Color( 0.74902, 0.996078, 0.980392, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
