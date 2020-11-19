@@ -39,6 +39,7 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("ui_accept"): 
 			velocity = Vector2.UP * jump_power #Normal Jump action
 			jump_released = false
+			$JumpAudio.play()
 
 	velocity = move_and_slide(velocity, Vector2.UP) 
 

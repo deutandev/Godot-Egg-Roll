@@ -7,6 +7,7 @@ onready var score_label = $Control/CanvasLayer/ScoreLabel
 
 func _ready():
 	Global.current_score = 0
+	
 
 func _on_ObstacleTimer_timeout():
 	var obs = OBSTACLE.instance()
