@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Ripoff"
-run/main_scene="res://src/Main/Main.tscn"
+run/main_scene="res://src/UI/title.tscn"
 boot_splash/bg_color=Color( 0.027451, 0, 0.113725, 1 )
 config/icon="res://icon.png"
 
