@@ -2,9 +2,9 @@ extends KinematicBody2D
 
 
 #Jump 
-export var fall_gravity_scale := 150.0
-export var low_jump_gravity_scale := 100.0
-export var jump_power := 600.0
+export var fall_gravity_scale := 200.0
+export var low_jump_gravity_scale := 150.0
+export var jump_power := 650.0
 var jump_released = false
 
 #Physics
@@ -15,7 +15,7 @@ var on_floor = false
 
 
 func _physics_process(delta):
-	if Input.is_action_just_released("ui_accept"):
+	if Input.is_action_just_released("jump"):
 		jump_released = true
 
 	#Applying gravity to player
@@ -36,7 +36,7 @@ func _physics_process(delta):
 		velocity += Vector2.DOWN * earth_gravity * low_jump_gravity_scale * delta
 
 	if on_floor:
-		if Input.is_action_just_pressed("ui_accept"): 
+		if Input.is_action_just_pressed("jump"): 
 			velocity = Vector2.UP * jump_power #Normal Jump action
 			jump_released = false
 			$JumpAudio.play()
