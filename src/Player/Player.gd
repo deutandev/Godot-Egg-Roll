@@ -47,7 +47,7 @@ func _physics_process(delta):
 
 
 func game_over():
-	get_tree().quit()
+	get_tree().change_scene("res://src/UI/title.tscn")
 
 
 func _on_Area2D_area_entered(area):
