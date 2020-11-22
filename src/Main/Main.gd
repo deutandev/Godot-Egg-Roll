@@ -9,6 +9,7 @@ var obs_list = [OBSTACLE, OBS]
 
 func _ready():
 	Global.current_score = 0
+	Global.obs_speed = 350
 
 
 func _on_ObstacleTimer_timeout():
