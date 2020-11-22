@@ -3,8 +3,9 @@
 [ext_resource path="res://src/Obstacles/Obstacle.gd" type="Script" id=1]
 [ext_resource path="res://src/img/cactus.png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 28.5404, 42.7664 )
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 24.057
+height = 39.7784
 
 [node name="Obstacle" type="Area2D"]
 position = Vector2( 1334.29, 568 )
