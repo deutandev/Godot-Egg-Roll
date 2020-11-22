@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/Obstacles/Obstacle.gd" type="Script" id=1]
-[ext_resource path="res://src/img/box.png" type="Texture" id=2]
+[ext_resource path="res://src/img/cactus.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 33.71, 32 )
+extents = Vector2( 28.5404, 42.7664 )
 
 [node name="Obstacle" type="Area2D"]
 position = Vector2( 1334.29, 568 )
@@ -16,13 +16,13 @@ __meta__ = {
 "_edit_horizontal_guides_": [ 600.0 ]
 }
 
-[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( -1.49608e-05, -0.111392 )
-scale = Vector2( 3.29407, 3.3052 )
-
 [node name="Sprite" type="Sprite" parent="."]
-modulate = Color( 0.631373, 0.0196078, 0.0196078, 1 )
+scale = Vector2( 0.391146, 0.391146 )
 texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( -0.262619, -0.499068 )
+scale = Vector2( 2.73809, 4.2575 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
