@@ -14,11 +14,11 @@ extents = Vector2( 57.145, 8.00006 )
 script = ExtResource( 2 )
 
 [node name="PlayerNode" parent="." instance=ExtResource( 1 )]
-position = Vector2( 160, 560 )
+position = Vector2( 160, 480.63 )
 z_index = 128
 
 [node name="Floor" type="StaticBody2D" parent="."]
-position = Vector2( 166.855, 600 )
+position = Vector2( 166.855, 520.63 )
 collision_mask = 2
 __meta__ = {
 "_edit_group_": true
@@ -57,7 +57,7 @@ autostart = true
 [node name="Background" parent="." instance=ExtResource( 3 )]
 
 [node name="HorizonNode" parent="." instance=ExtResource( 5 )]
-position = Vector2( 627, 565 )
+position = Vector2( 627, 485.63 )
 
 [node name="Starfield" parent="." instance=ExtResource( 6 )]
 [connection signal="timeout" from="ObstacleTimer" to="." method="_on_ObstacleTimer_timeout"]
