@@ -13,10 +13,12 @@ var earth_gravity = 10 # m/s^2
 export var gravity_scale := 100.0
 var on_floor = false
 
+onready var dust = get_parent().get_node("Dust")
 
 func _physics_process(delta):
 	if Input.is_action_just_released("jump"):
 		jump_released = true
+		dust.emitting = false
 
 	#Applying gravity to player
 	velocity += Vector2.DOWN * earth_gravity * gravity_scale * delta
@@ -40,11 +42,15 @@ func _physics_process(delta):
 			velocity = Vector2.UP * jump_power #Normal Jump action
 			jump_released = false
 			$JumpAudio.play()
+		dust.emitting = true
 
 	velocity = move_and_slide(velocity, Vector2.UP) 
 
-	if is_on_floor(): on_floor = true
-	else: on_floor = false
+	if is_on_floor(): 
+		on_floor = true
+	else: 
+		on_floor = false
+		dust.emitting = false
 
 
 func game_over():
