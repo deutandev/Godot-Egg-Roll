@@ -5,16 +5,13 @@
 [ext_resource path="res://src/bg/Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/UI/ui_theme.tres" type="Theme" id=4]
 [ext_resource path="res://src/bg/Horizon.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/juice/Dust.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/juice/Starfield.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 57.145, 8.00006 )
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 2 )
-
-[node name="Dust" parent="." instance=ExtResource( 6 )]
-position = Vector2( 160, 595.929 )
 
 [node name="PlayerNode" parent="." instance=ExtResource( 1 )]
 position = Vector2( 160, 560 )
@@ -61,5 +58,7 @@ autostart = true
 
 [node name="HorizonNode" parent="." instance=ExtResource( 5 )]
 position = Vector2( 627, 565 )
+
+[node name="Starfield" parent="." instance=ExtResource( 6 )]
 [connection signal="timeout" from="ObstacleTimer" to="." method="_on_ObstacleTimer_timeout"]
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_ScoreTimer_timeout"]

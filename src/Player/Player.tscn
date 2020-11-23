@@ -27,7 +27,7 @@ radius = 32.7138
 height = 1.93977
 
 [sub_resource type="CapsuleShape2D" id=3]
-radius = 35.52
+radius = 33.741
 height = 4.54427
 
 [node name="PlayerNode" type="Node2D"]

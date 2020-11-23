@@ -4,7 +4,7 @@
 
 [sub_resource type="Curve" id=1]
 max_value = 2.0
-_data = [ Vector2( 0, 0.322097 ), 0.0, 3.958, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+_data = [ Vector2( 0, 0 ), 0.0, 9.12504, 0, 0, Vector2( 1, 0 ), -3.29413, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=2]
 curve = SubResource( 1 )
@@ -20,15 +20,17 @@ initial_velocity = 10.0
 initial_velocity_random = 0.52
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
+tangential_accel = 5.0
+tangential_accel_random = 0.1
 scale = 0.5
-scale_random = 0.54
+scale_random = 0.12
 scale_curve = SubResource( 2 )
 
 [node name="Dust" type="Particles2D"]
 position = Vector2( 0, 29 )
 scale = Vector2( 0.5, 0.5 )
 emitting = false
-amount = 4
+amount = 6
 randomness = 0.12
 local_coords = false
 process_material = SubResource( 3 )
