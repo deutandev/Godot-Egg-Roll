@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="17.388384mm"
+   height="5.6493449mm"
+   viewBox="0 0 17.388384 5.6493449"
+   version="1.1"
+   id="svg3898"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="grass.svg">
+  <defs
+     id="defs3892" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.1531302"
+     inkscape:cx="32.85994"
+     inkscape:cy="10.675927"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="720"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3895">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-104.69866,-137.78247)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#2c4d2c;stroke-width:0.779989;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 104.97687,143.15851 c 1.94834,-1.98325 2.95382,-2.40095 4.43073,-3.60141 0,0 -0.51018,2.25805 -0.27281,3.25126 2.00196,-1.23504 4.42955,-2.51573 5.91517,-4.0179 l -0.17464,3.04866 c 2.04103,-0.76532 3.68719,-2.38932 5.53079,-3.58399 -0.79345,1.31659 -0.62205,3.65268 -1.68898,4.70581 l 3.04704,-1.89124 -1.30686,1.92909 v 0"
+       id="path3807"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/img/land.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:spray-origin="#path3430" />
+  </g>
+</svg>

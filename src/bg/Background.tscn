@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/juice/Starfield.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/img/land.png" type="Texture" id=2]
+[ext_resource path="res://src/bg/ParallaxBackground.gd" type="Script" id=3]
 
 [node name="Background" type="CanvasLayer"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource( 3 )
 
 [node name="bg" type="ColorRect" parent="ParallaxBackground"]
 anchor_right = 1.0
@@ -25,3 +28,10 @@ color = Color( 0.458824, 0.839216, 0.501961, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1689, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 693.233, 484 )
+texture = ExtResource( 2 )
