@@ -3,8 +3,8 @@ extends KinematicBody2D
 
 #Jump 
 export var fall_gravity_scale := 200.0
-export var low_jump_gravity_scale := 150.0
-export var jump_power := 680.0
+export var low_jump_gravity_scale := 180.0
+export var jump_power := 700.0
 var jump_released = false
 
 #Physics
