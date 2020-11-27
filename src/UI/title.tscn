@@ -30,14 +30,12 @@ __meta__ = {
 
 [node name="HighScore" type="Label" parent="."]
 anchor_left = 0.5
-anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 1.0
 margin_left = -66.0
-margin_top = -214.201
+margin_top = 192.075
 margin_right = 66.0
-margin_bottom = -176.201
-text = "High Score"
+margin_bottom = 230.075
+text = "High Score: 0"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
