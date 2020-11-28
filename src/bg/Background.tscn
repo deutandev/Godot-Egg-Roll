@@ -1,8 +1,67 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/juice/Starfield.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/img/land.png" type="Texture" id=2]
 [ext_resource path="res://src/bg/ParallaxBackground.gd" type="Script" id=3]
+[ext_resource path="res://src/img/sun.png" type="Texture" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "rotates"
+length = 500.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("sun:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 250, 500, 741.4, 991.4, 1241.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0, 180.0, 0.0, 360.0, 180.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("sun:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 500 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1180, 230 ), Vector2( -99.4442, 230 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "scale"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("sun:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.7, 0.7 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("sun:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
 
 [node name="Background" type="CanvasLayer"]
 
@@ -32,6 +91,20 @@ __meta__ = {
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_mirroring = Vector2( 1689, 0 )
 
-[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+[node name="Grass" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 693.233, 504 )
 texture = ExtResource( 2 )
+
+[node name="sun" type="Sprite" parent="."]
+position = Vector2( 1180, 230 )
+rotation = 1.58463
+scale = Vector2( 0.848679, 0.848679 )
+texture = ExtResource( 4 )
+
+[node name="RotateMoveSun" type="AnimationPlayer" parent="."]
+autoplay = "rotates"
+anims/rotates = SubResource( 1 )
+
+[node name="ScaleSun" type="AnimationPlayer" parent="."]
+autoplay = "scale"
+anims/scale = SubResource( 2 )

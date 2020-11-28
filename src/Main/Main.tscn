@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Main/Main.gd" type="Script" id=2]
 [ext_resource path="res://src/bg/Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/UI/ui_theme.tres" type="Theme" id=4]
 [ext_resource path="res://src/Main/UFOspawner.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/img/sun.png" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 57.145, 8.00006 )
@@ -56,9 +55,5 @@ autostart = true
 [node name="Background" parent="." instance=ExtResource( 3 )]
 
 [node name="UFOspawner" parent="." instance=ExtResource( 5 )]
-
-[node name="sun" type="Sprite" parent="."]
-position = Vector2( 1180, 205 )
-texture = ExtResource( 6 )
 [connection signal="timeout" from="ObstacleTimer" to="." method="_on_ObstacleTimer_timeout"]
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_ScoreTimer_timeout"]
