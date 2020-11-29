@@ -8,13 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="42.18763"
-   height="41.493034"
-   viewBox="0 0 11.162143 10.978366"
+   width="16.649691"
+   height="25.76833"
+   viewBox="0 0 4.4052306 6.817871"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="star.svg"
+   sodipodi:docname="fire-particle.svg"
    inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/img/egg.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -463,342 +463,6 @@
          in2="result2"
          id="feBlend2999" />
     </filter>
-    <filter
-       inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       inkscape:menu="Shadows and Glows"
-       inkscape:label="Cutout Glow"
-       style="color-interpolation-filters:sRGB"
-       id="filter2295">
-      <feOffset
-         dy="3"
-         dx="3"
-         id="feOffset2285" />
-      <feGaussianBlur
-         stdDeviation="3"
-         result="blur"
-         id="feGaussianBlur2287" />
-      <feFlood
-         flood-color="rgb(0,0,0)"
-         flood-opacity="1"
-         result="flood"
-         id="feFlood2289" />
-      <feComposite
-         in="flood"
-         in2="SourceGraphic"
-         operator="in"
-         result="composite"
-         id="feComposite2291" />
-      <feBlend
-         in="blur"
-         in2="composite"
-         mode="normal"
-         id="feBlend2293" />
-    </filter>
-    <filter
-       height="1"
-       width="1"
-       y="0"
-       x="0"
-       style="color-interpolation-filters:sRGB"
-       inkscape:label="Drop Shadow"
-       id="filter2333">
-      <feGaussianBlur
-         stdDeviation="100 100"
-         result="blur"
-         id="feGaussianBlur2327" />
-      <feColorMatrix
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0 "
-         result="colormatrix"
-         id="feColorMatrix2329" />
-      <feComposite
-         in="colormatrix"
-         in2="SourceGraphic"
-         operator="in"
-         id="feComposite2331"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix2427" />
-      <feFlood
-         id="feFlood2429"
-         flood-opacity="0.498039"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         in="fbSourceGraphic" />
-      <feComposite
-         in2="fbSourceGraphic"
-         id="feComposite2431"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur2433"
-         in="composite1"
-         stdDeviation="114.727"
-         result="blur" />
-      <feOffset
-         id="feOffset2435"
-         dx="3.68188"
-         dy="6"
-         result="offset" />
-      <feComposite
-         in2="offset"
-         id="feComposite2437"
-         in="fbSourceGraphic"
-         operator="over"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix2439" />
-      <feFlood
-         id="feFlood2441"
-         flood-opacity="0.498039"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         in="fbSourceGraphic" />
-      <feComposite
-         in2="fbSourceGraphic"
-         id="feComposite2443"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur2445"
-         in="composite1"
-         stdDeviation="114.727"
-         result="blur" />
-      <feOffset
-         id="feOffset2447"
-         dx="3.68188"
-         dy="6"
-         result="offset" />
-      <feComposite
-         in2="offset"
-         id="feComposite2449"
-         in="fbSourceGraphic"
-         operator="over"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix2451" />
-      <feFlood
-         id="feFlood2453"
-         flood-opacity="0.498039"
-         flood-color="rgb(252,204,204)"
-         result="flood"
-         in="fbSourceGraphic" />
-      <feComposite
-         in2="fbSourceGraphic"
-         id="feComposite2455"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur2457"
-         in="composite1"
-         stdDeviation="114.727"
-         result="blur" />
-      <feOffset
-         id="feOffset2459"
-         dx="3.68188"
-         dy="6"
-         result="offset" />
-      <feComposite
-         in2="offset"
-         id="feComposite2461"
-         in="fbSourceGraphic"
-         operator="over"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix2523" />
-      <feFlood
-         id="feFlood2525"
-         flood-opacity="0.498039"
-         flood-color="rgb(252,204,204)"
-         result="flood"
-         in="fbSourceGraphic" />
-      <feComposite
-         in2="fbSourceGraphic"
-         id="feComposite2527"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur2529"
-         in="composite1"
-         stdDeviation="135.578"
-         result="blur" />
-      <feOffset
-         id="feOffset2531"
-         dx="1.31482"
-         dy="6"
-         result="offset" />
-      <feComposite
-         in2="offset"
-         id="feComposite2533"
-         in="fbSourceGraphic"
-         operator="over"
-         result="composite2" />
-    </filter>
-    <filter
-       inkscape:label="Apparition"
-       inkscape:menu="Blurs"
-       inkscape:menu-tooltip="Edges are partly feathered out"
-       style="color-interpolation-filters:sRGB"
-       id="filter2640"
-       x="-0.00030764192"
-       width="1.0006154"
-       y="-0.00031279185"
-       height="1.0006256">
-      <feMorphology
-         radius="4"
-         in="SourceGraphic"
-         result="result0"
-         id="feMorphology2634" />
-      <feGaussianBlur
-         in="result0"
-         stdDeviation="0.0011923414"
-         result="result91"
-         id="feGaussianBlur2636" />
-      <feComposite
-         operator="in"
-         in="SourceGraphic"
-         in2="result91"
-         id="feComposite2638" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:label="Feather"
-       id="filter2680">
-      <feGaussianBlur
-         stdDeviation="18.6282"
-         result="blur"
-         id="feGaussianBlur2672" />
-      <feComposite
-         in="SourceGraphic"
-         in2="blur"
-         operator="atop"
-         result="composite1"
-         id="feComposite2674" />
-      <feComposite
-         in2="composite1"
-         operator="in"
-         result="composite2"
-         id="feComposite2676" />
-      <feComposite
-         in2="composite2"
-         operator="in"
-         result="fbSourceGraphic"
-         id="feComposite2678" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix2682" />
-      <feGaussianBlur
-         id="feGaussianBlur2684"
-         stdDeviation="18.6282"
-         result="blur"
-         in="fbSourceGraphic" />
-      <feComposite
-         in2="blur"
-         id="feComposite2686"
-         in="fbSourceGraphic"
-         operator="atop"
-         result="composite1" />
-      <feComposite
-         in2="composite1"
-         id="feComposite2688"
-         operator="in"
-         result="composite2" />
-      <feComposite
-         in2="composite2"
-         id="feComposite2690"
-         operator="in"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix2692" />
-      <feGaussianBlur
-         id="feGaussianBlur2694"
-         stdDeviation="83.6634"
-         result="blur"
-         in="fbSourceGraphic" />
-      <feComposite
-         in2="blur"
-         id="feComposite2696"
-         in="fbSourceGraphic"
-         operator="atop"
-         result="composite1" />
-      <feComposite
-         in2="composite1"
-         id="feComposite2698"
-         operator="in"
-         result="composite2" />
-      <feComposite
-         in2="composite2"
-         id="feComposite2700"
-         operator="in"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix2702" />
-      <feGaussianBlur
-         id="feGaussianBlur2704"
-         stdDeviation="0.01"
-         result="blur"
-         in="fbSourceGraphic" />
-      <feComposite
-         in2="blur"
-         id="feComposite2706"
-         in="fbSourceGraphic"
-         operator="atop"
-         result="composite1" />
-      <feComposite
-         in2="composite1"
-         id="feComposite2708"
-         operator="in"
-         result="composite2" />
-      <feComposite
-         in2="composite2"
-         id="feComposite2710"
-         operator="in"
-         result="composite3" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:label="Clean Edges"
-       id="filter2896">
-      <feGaussianBlur
-         stdDeviation="0.209393"
-         result="blur"
-         id="feGaussianBlur2890" />
-      <feComposite
-         in="SourceGraphic"
-         in2="blur"
-         operator="in"
-         result="composite1"
-         id="feComposite2892" />
-      <feComposite
-         in="composite1"
-         in2="composite1"
-         operator="in"
-         result="composite2"
-         id="feComposite2894" />
-    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -807,9 +471,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.4633406"
-     inkscape:cx="19.182266"
-     inkscape:cy="5.9428066"
+     inkscape:zoom="1.7719724"
+     inkscape:cx="149.50567"
+     inkscape:cy="-5.0009648"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -835,7 +499,7 @@
      inkscape:snap-bbox-midpoints="true"
      inkscape:snap-bbox-edge-midpoints="true">
     <sodipodi:guide
-       position="22.251306,152.61049"
+       position="91.71104,-153.07632"
        orientation="1,0"
        id="guide857" />
   </sodipodi:namedview>
@@ -855,7 +519,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-74.321609,-59.385079)">
+     transform="translate(-4.8618749,-37.598367)">
     <path
        id="path843"
        style="fill:#7c8ba2;fill-opacity:1;stroke:#00112b;stroke-width:0.284849;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.992157;paint-order:fill markers stroke"
@@ -1212,6 +876,23 @@
        inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/img/dust.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path1663"
+       sodipodi:sides="5"
+       sodipodi:cx="96.572914"
+       sodipodi:cy="50.434021"
+       sodipodi:r1="3.2304447"
+       sodipodi:r2="1.2640646"
+       sodipodi:arg1="1.0471976"
+       sodipodi:arg2="1.6952275"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 98.188136,53.231668 -1.772105,-1.543356 -2.004706,1.146397 0.920208,-2.162296 -1.709777,-1.552332 2.340826,0.206983 0.948006,-2.105791 0.526501,2.290219 2.295677,0.250882 -2.01543,1.208449 z"
+       inkscape:transform-center-x="-0.10434599"
+       inkscape:transform-center-y="-0.20755091" />
     <path
        id="path4653"
        style="opacity:1;fill:#2c4d2c;fill-opacity:1;stroke:#2c4d2c;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
@@ -2288,17 +1969,5 @@
        inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/img/fire-particle.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
-    <path
-       id="path2632"
-       style="opacity:1;fill:#90fffe;fill-opacity:1;stroke:#b75f5f;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke;filter:url(#filter2896)"
-       inkscape:transform-center-x="-0.15882849"
-       inkscape:transform-center-y="-0.31592046"
-       d="m 82.202439,69.448581 -2.697386,-2.349198 -3.051435,1.744972 1.400682,-3.291308 -2.602512,-2.362862 3.563054,0.315058 1.442994,-3.2053 0.801407,3.486023 3.494331,0.381876 -3.067757,1.839425 z" />
-    <path
-       id="path1663"
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-       inkscape:transform-center-x="-0.10434599"
-       inkscape:transform-center-y="-0.20755091"
-       d="m 81.359074,67.987829 -1.772106,-1.543356 -2.004706,1.146397 0.920208,-2.162296 -1.709776,-1.552333 2.340825,0.206984 0.948006,-2.105791 0.526502,2.290218 2.295676,0.250882 -2.015429,1.20845 z" />
   </g>
 </svg>
