@@ -36,6 +36,7 @@ __meta__ = {
 }
 
 [node name="Player" type="KinematicBody2D" parent="."]
+collision_mask = 9
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Player"]
@@ -51,7 +52,7 @@ shape = SubResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="Player"]
 collision_layer = 2
-collision_mask = 4
+collision_mask = 12
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D"]
 position = Vector2( 0, 1 )

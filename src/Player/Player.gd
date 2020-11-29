@@ -1,6 +1,5 @@
 extends KinematicBody2D
 
-
 #Jump 
 export var fall_gravity_scale := 200.0
 export var low_jump_gravity_scale := 180.0
