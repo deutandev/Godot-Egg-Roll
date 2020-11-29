@@ -17,7 +17,9 @@ __meta__ = {
 "_edit_horizontal_guides_": [ 600.0 ]
 }
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="Sprite" parent="." groups=[
+"obstacles",
+]]
 position = Vector2( 0, -4.23782 )
 texture = ExtResource( 2 )
 
