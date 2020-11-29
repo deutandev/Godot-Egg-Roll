@@ -96,8 +96,7 @@ position = Vector2( 693.233, 504 )
 texture = ExtResource( 2 )
 
 [node name="sun" type="Sprite" parent="."]
-position = Vector2( 315.201, 230 )
-rotation = 5.17786
+position = Vector2( 1180, 230 )
 texture = ExtResource( 4 )
 
 [node name="RotateMoveSun" type="AnimationPlayer" parent="."]

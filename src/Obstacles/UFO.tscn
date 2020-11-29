@@ -1,27 +1,72 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/img/ufo.png" type="Texture" id=1]
 [ext_resource path="res://src/Obstacles/UFO.gd" type="Script" id=2]
+[ext_resource path="res://src/sound/destroyed.wav" type="AudioStream" id=3]
+[ext_resource path="res://src/img/fire-particle.svg" type="Texture" id=4]
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0.00763358, 0.439364 ), 0.0, 0.0, 0, 0, Vector2( 0.564885, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.00706756 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=3]
+curve = SubResource( 2 )
+
+[sub_resource type="ParticlesMaterial" id=4]
+emission_shape = 2
+emission_box_extents = Vector3( 60, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, -50, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 2.0
+scale_random = 0.99
+scale_curve = SubResource( 3 )
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 25.4974
 height = 60.2677
 
-[node name="UFO" type="Area2D" groups=[
-"ufo",
-]]
+[node name="UFO" type="Area2D"]
 collision_layer = 8
 collision_mask = 18
 script = ExtResource( 2 )
 
+[node name="ExplodeParticles2" type="Particles2D" parent="."]
+position = Vector2( 0, 6.71751 )
+emitting = false
+amount = 15
+process_material = SubResource( 4 )
+texture = ExtResource( 4 )
+
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 scale = Vector2( 6.0705, 2.59094 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DestroyedAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -4.0
+
+[node name="ExplodeParticles" type="Particles2D" parent="."]
+position = Vector2( 0, 6.71751 )
+emitting = false
+amount = 15
+process_material = SubResource( 4 )
+texture = ExtResource( 4 )
+[connection signal="area_entered" from="." to="." method="_on_UFO_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_UFO_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

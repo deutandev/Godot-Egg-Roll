@@ -41,6 +41,7 @@ func _process(delta):
 
 func shoot():
 	if Input.is_action_just_pressed("shoot"):
+		$ShootAudio.play()
 		var bomb = BOMB.instance()
 		bomb.position = $PlayerNode/Player.global_position
 		add_child(bomb)
