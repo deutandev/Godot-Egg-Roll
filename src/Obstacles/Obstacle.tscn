@@ -19,7 +19,6 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -4.23782 )
-scale = Vector2( 0.5, 0.463467 )
 texture = ExtResource( 2 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
