@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/img/bomb.png" type="Texture" id=1]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 1, 0.38633, 0, 1, 0.935788, 1, 0.0273438, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 0.744981 ), 0.0, 0.0, 0, 0, Vector2( 0.541985, 0.985834 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 1
+emission_sphere_radius = 10.0
+flag_disable_z = true
+spread = 52.83
+gravity = Vector3( 0, -50, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 10.0
+scale_random = 0.99
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
+
+[node name="BombItemSprite" type="Sprite"]
+texture = ExtResource( 1 )
+
+[node name="BombParticles" type="Particles2D" parent="."]
+amount = 19
+process_material = SubResource( 5 )
