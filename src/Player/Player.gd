@@ -57,4 +57,7 @@ func game_over():
 
 
 func _on_Area2D_area_entered(area):
-	game_over()
+	if area.is_in_group("items"):
+		pass
+	else:
+		game_over()

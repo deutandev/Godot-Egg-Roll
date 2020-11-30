@@ -3,19 +3,19 @@
 [ext_resource path="res://src/img/bomb.png" type="Texture" id=1]
 [ext_resource path="res://src/Player/Bomb.gd" type="Script" id=2]
 
-[sub_resource type="Gradient" id=3]
+[sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.900421, 1, 0.0195312, 1, 0.925781, 0.185111, 0.10849, 1 )
 
-[sub_resource type="GradientTexture" id=4]
-gradient = SubResource( 3 )
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
 
-[sub_resource type="Curve" id=5]
+[sub_resource type="Curve" id=3]
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=6]
-curve = SubResource( 5 )
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
 
-[sub_resource type="ParticlesMaterial" id=7]
+[sub_resource type="ParticlesMaterial" id=5]
 lifetime_randomness = 0.06
 emission_shape = 1
 emission_sphere_radius = 7.0
@@ -26,14 +26,13 @@ orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 12.0
 scale_random = 1.0
-scale_curve = SubResource( 6 )
-color_ramp = SubResource( 4 )
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="CircleShape2D" id=6]
 radius = 13.9892
 
-[sub_resource type="Animation" id=2]
-resource_name = "rotate"
+[sub_resource type="Animation" id=7]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:rotation_degrees")
@@ -63,12 +62,12 @@ position = Vector2( 11.844, 0.530331 )
 amount = 21
 explosiveness = 0.04
 randomness = 0.08
-process_material = SubResource( 7 )
+process_material = SubResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=[
 "Bomb",
 ]]
-shape = SubResource( 1 )
+shape = SubResource( 6 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -79,14 +78,14 @@ scale = Vector2( 2.12373, 1.74915 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "rotate"
-anims/rotate = SubResource( 2 )
+anims/rotate = SubResource( 7 )
 
 [node name="FireFront" type="Particles2D" parent="."]
 position = Vector2( 11.844, 0.530331 )
 amount = 21
 explosiveness = 0.04
 randomness = 0.08
-process_material = SubResource( 7 )
+process_material = SubResource( 5 )
 
 [node name="Area2D" type="Area2D" parent="." groups=[
 "Bomb",
