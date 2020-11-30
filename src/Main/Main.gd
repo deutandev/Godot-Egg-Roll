@@ -2,7 +2,8 @@ extends Node2D
 
 
 const BOMB = preload("res://src/Player/Bomb.tscn")
-onready var score_label = $Control/CanvasLayer/ScoreLabel
+onready var score_label = $Control/CanvasLayer/VBoxContainer/ScoreLabel
+onready var highscore_label = $Control/CanvasLayer/VBoxContainer/HighScoreLabel
 onready var player_pos = $PlayerNode.position
 const OBSTACLE = preload("res://src/Obstacles/Obstacle.tscn")
 const OBS = preload("res://src/Obstacles/Obstacle2.tscn")
@@ -13,11 +14,13 @@ var obs_list = [OBSTACLE, OBS]
 func _ready():
 	Global.current_score = 0
 	Global.obs_speed = 350
+	highscore_label.text = "High Score: " + str(Global.high_score)
 	get_random_spawn_time()
 
 
 func _physics_process(delta):
 	shoot()
+
 
 func get_random_spawn_time():
 	randomize()

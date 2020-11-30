@@ -808,9 +808,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.1899033"
-     inkscape:cx="45.371637"
-     inkscape:cy="124.33234"
+     inkscape:zoom="0.91745396"
+     inkscape:cx="339.69804"
+     inkscape:cy="442.88751"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -834,12 +834,7 @@
      inkscape:snap-page="true"
      inkscape:snap-center="true"
      inkscape:snap-bbox-midpoints="true"
-     inkscape:snap-bbox-edge-midpoints="true">
-    <sodipodi:guide
-       position="96.572915,88.257445"
-       orientation="1,0"
-       id="guide857" />
-  </sodipodi:namedview>
+     inkscape:snap-bbox-edge-midpoints="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -848,7 +843,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2300,5 +2295,65 @@
        inkscape:transform-center-x="-0.10434599"
        inkscape:transform-center-y="-0.20755091"
        d="m 81.359074,67.987829 -1.772106,-1.543356 -2.004706,1.146397 0.920208,-2.162296 -1.709776,-1.552333 2.340825,0.206984 0.948006,-2.105791 0.526502,2.290218 2.295676,0.250882 -2.015429,1.20845 z" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#78d4db;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.920273;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
+       d="m 92.237961,41.024577 h 8.828969 c 0.8173,0 1.47528,0.657975 1.47528,1.475282 v 8.828967 c 0,0.817306 -0.65798,1.475281 -1.47528,1.475281 h -8.828969 c -0.817305,0 -1.475282,-0.657975 -1.475282,-1.475281 v -8.828967 c 0,-0.817307 0.657977,-1.475282 1.475282,-1.475282 z"
+       id="path1133"
+       inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/UI/pause-icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#50504f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.92034;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
+       d="m 92.237527,40.564622 c -1.064262,0 -1.935028,0.870766 -1.935028,1.935028 v 8.82848 c 0,1.064263 0.870766,1.936494 1.935028,1.936494 h 8.829943 c 1.06426,0 1.93503,-0.872231 1.93503,-1.936494 v -8.82848 c 0,-1.064262 -0.87077,-1.935028 -1.93503,-1.935028 z m 0,0.919908 h 8.829943 c 0.57035,0 1.01512,0.444771 1.01512,1.01512 v 8.82848 c 0,0.570351 -0.44477,1.015122 -1.01512,1.015122 h -8.829943 c -0.570349,0 -1.01512,-0.444771 -1.01512,-1.015122 v -8.82848 c 0,-0.570349 0.444771,-1.01512 1.01512,-1.01512 z"
+       id="path1165"
+       inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/UI/pause-icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#50504f;stroke-width:0.434956;stroke-linecap:round;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1167"
+       width="2.5977075"
+       height="7.1958723"
+       x="93.09227"
+       y="43.234348"
+       inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/UI/pause-icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#50504f;stroke-width:0.434956;stroke-linecap:round;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1169"
+       width="2.5977075"
+       height="7.1958723"
+       x="97.512169"
+       y="43.311859"
+       inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/UI/pause-icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#50504f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.92034;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
+       d="m 92.237527,40.564622 c -1.064262,0 -1.935028,0.870766 -1.935028,1.935028 v 8.82848 c 0,1.064263 0.870766,1.936494 1.935028,1.936494 h 8.829943 c 1.06426,0 1.93503,-0.872231 1.93503,-1.936494 v -8.82848 c 0,-1.064262 -0.87077,-1.935028 -1.93503,-1.935028 z m 0,0.919908 h 8.829943 c 0.57035,0 1.01512,0.444771 1.01512,1.01512 v 8.82848 c 0,0.570351 -0.44477,1.015122 -1.01512,1.015122 h -8.829943 c -0.570349,0 -1.01512,-0.444771 -1.01512,-1.015122 v -8.82848 c 0,-0.570349 0.444771,-1.01512 1.01512,-1.01512 z"
+       id="path1171"
+       inkscape:export-filename="/home/dikawfa/Projects/Godot/Ripoff/src/UI/pause-icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#50504f;stroke-width:0.79375;stroke-linecap:round;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1183"
+       width="65.256401"
+       height="12.995638"
+       x="65.616104"
+       y="101.26758"
+       ry="2.467876" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="74.267494"
+       y="111.68224"
+       id="text1187"><tspan
+         sodipodi:role="line"
+         id="tspan1185"
+         x="74.267494"
+         y="111.68224"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:Cantarell;stroke-width:0.264583">Resume</tspan></text>
   </g>
 </svg>
