@@ -9,5 +9,4 @@ func _on_BombItem_body_entered(body):
 
 
 func _process(delta):
-	rotate(30)
 	position.x -= Global.obs_speed * delta
