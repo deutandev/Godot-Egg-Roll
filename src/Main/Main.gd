@@ -6,7 +6,7 @@ onready var score_label = $Control/CanvasLayer/ScoreLabel
 onready var player_pos = $PlayerNode.position
 const OBSTACLE = preload("res://src/Obstacles/Obstacle.tscn")
 const OBS = preload("res://src/Obstacles/Obstacle2.tscn")
-const UFO = preload("res://src/Obstacles/UFO.tscn")
+const UFO = preload("res://src/Obstacles/UFO/UFO.tscn")
 var obs_list = [OBSTACLE, OBS]
 
 

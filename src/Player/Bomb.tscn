@@ -51,7 +51,9 @@ tracks/0/keys = {
 [sub_resource type="CircleShape2D" id=8]
 radius = 16.3078
 
-[node name="Bomb" type="KinematicBody2D"]
+[node name="Bomb" type="KinematicBody2D" groups=[
+"Bomb",
+]]
 collision_layer = 16
 collision_mask = 0
 script = ExtResource( 2 )
@@ -63,7 +65,9 @@ explosiveness = 0.04
 randomness = 0.08
 process_material = SubResource( 7 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=[
+"Bomb",
+]]
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -84,7 +88,9 @@ explosiveness = 0.04
 randomness = 0.08
 process_material = SubResource( 7 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=[
+"Bomb",
+]]
 collision_layer = 16
 collision_mask = 8
 

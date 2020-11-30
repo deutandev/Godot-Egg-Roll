@@ -2,7 +2,7 @@ extends Node2D
 
 
 
-const UFO = preload("res://src/Obstacles/UFO.tscn")
+const UFO = preload("res://src/Obstacles/UFO/UFO.tscn")
 
 
 func _on_SpawnTimer_timeout():
