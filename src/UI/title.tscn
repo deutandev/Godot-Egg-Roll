@@ -139,3 +139,28 @@ margin_left = 78.0
 margin_right = 166.0
 margin_bottom = 38.0
 text = " : Shoot"
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Credits" type="Label" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -287.224
+margin_top = -55.4614
+margin_right = -22.2236
+margin_bottom = -17.4614
+text = "Deutan.itch.io"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

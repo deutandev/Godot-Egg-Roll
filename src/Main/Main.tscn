@@ -86,7 +86,6 @@ position = Vector2( 15.7726, 14.5611 )
 
 [node name="BombsCountLabel" type="Label" parent="Control/CanvasLayer/VBoxContainer/HBoxContainer"]
 margin_left = 28.0
-margin_top = -5.0
 margin_right = 47.0
 margin_bottom = 38.0
 custom_fonts/font = ExtResource( 9 )
