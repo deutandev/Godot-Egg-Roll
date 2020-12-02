@@ -1,10 +1,10 @@
-extends Node2D
+extends Control
 
 
 const BOMB = preload("res://src/Player/Bomb.tscn")
-onready var score_label = $Control/CanvasLayer/VBoxContainer/ScoreLabel
-onready var highscore_label = $Control/CanvasLayer/VBoxContainer/HighScoreLabel
-onready var bombs_label = $Control/CanvasLayer/VBoxContainer/HBoxContainer/BombsCountLabel
+onready var score_label = $VBoxContainer/ScoreLabel
+onready var highscore_label = $VBoxContainer/HighScoreLabel
+onready var bombs_label = $VBoxContainer/HBoxContainer/BombsCountLabel
 onready var player_pos = $PlayerNode.position
 const OBSTACLE = preload("res://src/Obstacles/Obstacle.tscn")
 const OBS = preload("res://src/Obstacles/Obstacle2.tscn")

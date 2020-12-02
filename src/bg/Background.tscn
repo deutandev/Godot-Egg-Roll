@@ -16,10 +16,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 250, 500, 741.4, 991.4, 1241.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.5, 250, 500, 741.4, 991.4, 1241.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 360.0, 180.0, 0.0, 360.0, 180.0 ]
+"values": [ 0.0, 0.0, 360.0, 180.0, 0.0, 360.0, 180.0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("sun:position")
@@ -28,10 +28,22 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 500 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.5, 500 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1180, 230 ), Vector2( -99.4442, 230 ) ]
+"values": [ Vector2( 1180, 230 ), Vector2( 1180, 230 ), Vector2( -99.4442, 230 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("sun:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -65,6 +77,12 @@ tracks/1/keys = {
 
 [node name="Background" type="CanvasLayer"]
 
+[node name="sun" type="Sprite" parent="."]
+position = Vector2( 1074.98, 230 )
+rotation = 1.03251
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 4 )
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 script = ExtResource( 3 )
 
@@ -94,10 +112,6 @@ motion_mirroring = Vector2( 1689, 0 )
 [node name="Grass" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 693.233, 504 )
 texture = ExtResource( 2 )
-
-[node name="sun" type="Sprite" parent="."]
-position = Vector2( 1180, 230 )
-texture = ExtResource( 4 )
 
 [node name="RotateMoveSun" type="AnimationPlayer" parent="."]
 autoplay = "rotates"
